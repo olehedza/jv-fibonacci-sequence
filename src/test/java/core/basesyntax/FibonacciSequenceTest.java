@@ -16,8 +16,8 @@ public class FibonacciSequenceTest {
             int[] temp = fibonacciSequence;
             int[] actualResult = sequence.getFibonacciSequence(i);
             int[] expectedResult = Arrays.copyOf(temp, i);
-            Assert.assertArrayEquals("Test failed with parameter: " + i,
-                    expectedResult, actualResult);
+            Assert.assertArrayEquals(
+                    "Test failed with parameter: " + i, expectedResult, actualResult);
         }
     }
 }
